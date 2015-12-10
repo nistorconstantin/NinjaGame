@@ -1,0 +1,5 @@
+#pragma once
+
+#define SCREEN_INDEX_GAMEPLAY1 0;
+#define SCREEN_INDEX_GAMEPLAY2 1;
+#define SCREEN_INDEX_GAMEPLAY3 2;
