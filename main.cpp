@@ -5,7 +5,7 @@ int main(int argc, char** argv) {
 	
 	App app;
 
-	app.run();
+	app.run("My Ninja Game");
 
 	return 0;
 }

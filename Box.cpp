@@ -22,7 +22,7 @@ void Box::init(
 	m_uvRect = uvRect;
 	// Make the body
 	b2BodyDef bodyDef;
-	bodyDef.type = b2_dynamicBody;
+	bodyDef.type = b2_staticBody;
 	bodyDef.position.Set(position.x, position.y);
 	bodyDef.fixedRotation = fixedRotation;
 	m_body = world->CreateBody(&bodyDef);

@@ -166,7 +166,7 @@ void Player::update(Adina::InputManager& inputManager)
 				m_onGround = true;
 				// We can jump
 				if (inputManager.isKeyPressed(SDLK_w)) {
-					body->ApplyLinearImpulse(b2Vec2(0.0f, 30.0), b2Vec2(0.0f, 0.0f), true);
+					body->ApplyLinearImpulse(b2Vec2(0.0f, 20.0), b2Vec2(0.0f, 0.0f), true);
 					break;
 				}
 			}

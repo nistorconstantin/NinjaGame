@@ -1,6 +1,7 @@
 #pragma once
 
-#include "Box.h"
+#include "StaticBox.h"
+#include "DinamycBox.h"
 #include "Player.h"
 #include <Adina/IGameScreen.h>
 #include <Box2D/Box2D.h>
@@ -28,7 +29,8 @@ class GamePlayScreen2 : public Adina::IGameScreen
 	bool m_renderDebug = false;
 
 	Player m_player;
-	std::vector<Box> m_boxes;
+	std::vector<StaticBox> m_StaticBoxes;
+	std::vector<DinamycBox> m_DinamBoxes;
 	std::unique_ptr<b2World> m_world;
 public:
 	GamePlayScreen2(Adina::Window* window);
@@ -52,5 +54,10 @@ public:
 private:
 	void checkInput();
 	void initUI();
+
+	bool onNextGameClicked(const CEGUI::EventArgs& e);
+
+	void addStaticBoxes();
+	void addDinamycBoxes();
 };
 

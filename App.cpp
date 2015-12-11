@@ -13,7 +13,8 @@ App::~App()
 }
 
 
-void App::onInit() {
+void App::onInit() 
+{
 
 }
 

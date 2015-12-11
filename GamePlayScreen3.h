@@ -52,5 +52,6 @@ public:
 private:
 	void checkInput();
 	void initUI();
+	bool onExitClicked(const CEGUI::EventArgs& e);
 };
 
